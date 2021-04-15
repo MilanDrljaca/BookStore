@@ -17,14 +17,16 @@ namespace WebGentle.BookStore.Controllers
             _bookRepository = new BookRepository();
         }
         
-        public List<BookModel> GetAllBooks()
+        public ViewResult GetAllBooks()
         {
-            return _bookRepository.GetAllBooks();
+           var data= _bookRepository.GetAllBooks();
+            return View();
         }
 
-        public BookModel GetBook(int id)
+        public ViewResult GetBook(int id)
         {
-            return _bookRepository.GetbookById(id);
+            var data = _bookRepository.GetbookById(id);
+            return View();
         }
         public List<BookModel> SearchBooks(string bookName, string authorName)
         {
