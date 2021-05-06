@@ -25,11 +25,11 @@ namespace WebGentle.BookStore.Repository
         {
             return new List<BookModel>()
             {
-                new BookModel(){Id=1 , Title="MVC",Author="glavonja"},
-                new BookModel(){Id=2 , Title="dot net core",Author="nitish"},
-                new BookModel(){Id=3 , Title="C#",Author="monika"},
-                new BookModel(){Id=4 , Title="Java",Author="webgentle"},
-                new BookModel(){Id=5 , Title="PHP",Author="glavonja"},
+                new BookModel(){Id=1 , Title="MVC",Author="glavonja", Description="This is description for MVC book"},
+                new BookModel(){Id=2 , Title="dot net core",Author="nitish", Description="This is description for dot net core book"},
+                new BookModel(){Id=3 , Title="C#",Author="monika", Description="This is description for C# book"},
+                new BookModel(){Id=4 , Title="Java",Author="webgentle", Description="This is description for Java book"},
+                new BookModel(){Id=5 , Title="PHP",Author="glavonja", Description="This is description for PHP book"},
 
 
             };

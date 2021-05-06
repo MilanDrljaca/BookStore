@@ -12,7 +12,7 @@
     <header>
         <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3#">
             <div class="container">
-                <a class="navbar-brand" href="#">
+                <a class="navbar-brand" href="/">
 
                     <img src="~/images/origamijoda.png" width="30" height="30" />
                     Bookstore
@@ -30,15 +30,17 @@
                     </ul>
                     <ul class="navbar-nav flex-grow-1">
                         <li class="nav-item">
-                            <a class="nav-link text-dark">Home</a>
+                            <a class="nav-link text-dark" href="/">Home</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark">About</a>
+                            <a class="nav-link text-dark" href="/home/aboutus">About</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark">Contact</a>
+                            <a class="nav-link text-dark" href="/home/contactus">Contact</a>
                         </li>
-
+                        <li class="nav-item">
+                            <a class="nav-link text-dark" href="/book/getallbooks">Аll books</a>
+                        </li>
                     </ul>
                 </div>
             </div>
@@ -49,7 +51,12 @@
 
     </main>
   
-  
+  <footer class="border-top footer text-muted text-center">
+
+      <div class="container">
+          Copyright &copy; Book Store @DateTime.Now.Year
+      </div>
+  </footer>
  
 </body>
 </html>
